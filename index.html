@@ -47,31 +47,33 @@
   </header>
   <main>
     <section class="section-action">
-      <div class="booking">
-        <h2 class="section-title">Быстрая бронь</h2>
-        <input type="text" placeholder="Город">
-        <input type="text" placeholder="Категория номера">
-        <input type="text" onfocus="(this.type='date')" placeholder="Дата заселения">
-        <input type="number" placeholder="Количество ночей">
-        <input type="number" placeholder="Количество гостей">
-        <button class="btn search">
-          Найти номер
-        </button>
-        <a href="">9 756</a>
-        <span>Предложений доступно</span>
+      <div class="conteiner parent">
+        <div class="child reserve">
+          <h2 class="section-title">Быстрая бронь</h2>
+          <input type="text" placeholder="Город">
+          <input type="text" placeholder="Категория номера">
+          <input type="text" onfocus="(this.type='date')" placeholder="Дата заселения">
+          <input type="number" placeholder="Количество ночей">
+          <input type="number" placeholder="Количество гостей">
+          <button class="btn search">
+            Найти номер
+          </button>
+          <a href="">9 756</a>
+          <span>Предложений доступно</span>
+        </div>
+        <div class="child offer ">
+          <h2 class="section-title">Спецпредложение</h2>
+          <article class="article">
+            <h3>Номера категории люкс</h3>
+            <span>От 5000 р 
+            <a href="">Подробнее</a>
+            </span>
+          </article>
+        </div>
       </div>
     </section>
-    <div class="background">
-      <article class="offer">
-        <h2 class="section-title">Спецпредложение</h2>
-        <h3>Номера категории люкс</h3>
-        <span>От 5000 р 
-          <a href="">Подробнее</a>
-        </span> 
-      </article>
-    </div>
     <section class="section-description">
-      <div class="description">
+      <div class="conteiner">
         <h2 class="section-title">О нас</h2>
         <p>
           Идейные соображения высшего порядка, а так же сложившаяся структура организации влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а так же развитие различных форм деятельности представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся структура организации требуют определения и уточнения существенных финансовых и административных условий.
@@ -79,7 +81,7 @@
       </div>
     </section>
     <section class="section-service">
-      <div class="service">
+      <div class="conteiner">
        <h2 class="section-title">Услуги</h2>
        <ul class="list-service">
         <li class="item-service exlusiv">
@@ -102,7 +104,7 @@
       </div>
     </section>
     <section class="section-benefits">
-      <div class="benefits">
+      <div class="conteiner">
         <h2 class="section-title">
           Преимущества
         </h2>
@@ -135,7 +137,7 @@
       </div>
     </section>
     <section class="section-choice-hotels">
-      <div class="choice-hotels">
+      <div class="conteiner">
         <h2 class="section-title">
           Размещение
         </h2>
@@ -144,11 +146,13 @@
             <img src="" alt="Отель" class="choice-hotels">
             <div>
               <span>От <b>4 698 р</b>/ночь</span>
-              <img src="" alt="Рейтинг 4 из 5">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
+              <span class="stars">
+                <img src="" alt="Рейтинг 4 из 5">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+              </span>
             </div>
             <h3 class="title-choice-hotels" >
               Lagoona Española
@@ -163,11 +167,13 @@
             <div>
               <div>
                 <span>От <b>5 148 р</b>/ночь</span>
-                <img src="" alt="Рейтинг 4 из 5">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <span class="stars">
+                  <img src="" alt="Рейтинг 4 из 5">
+                  <img src="" alt="">
+                  <img src="" alt="">
+                  <img src="" alt="">
+                  <img src="" alt="">
+                </span>
               </div>
             </div>
             <h3 class="title-choice-hotels" >
@@ -182,11 +188,13 @@
             <img src="" alt="Отель" class="choice-hotels">
             <div>
               <span>От <b>6 254 р</b>/ночь</span>
-              <img src="" alt="Рейтинг 5 из 5">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
+              <span class="stars">
+                <img src="" alt="Рейтинг 5 из 5">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+              </span>
             </div>
             <h3 class="title-choice-hotels" >
               Lagoona de la guerra
@@ -200,11 +208,13 @@
             <img src="" alt="Отель" class="choice-hotels">
             <div>
               <span>От <b>6 320 р</b>/ночь</span>
-              <img src="" alt="Рейтинг 5 из 5">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
+              <span class="stars">
+                <img src="" alt="Рейтинг 5 из 5">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+              </span>
             </div>
             <h3 class="title-choice-hotels" >
               Lagoona mentira piadosa
@@ -218,11 +228,13 @@
             <img src="" alt="Отель" class="choice-hotels">
             <div>
               <span>От <b>6 457 р</b>/ночь</span>
-              <img src="" alt="Рейтинг 5 из 5">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
+              <span class="stars">
+                <img src="" alt="Рейтинг 5 из 5">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+              </span>
             </div>
             <h3 class="title-choice-hotels" >
               Lagoona empujar la creatividad
@@ -236,11 +248,13 @@
             <img src="" alt="Отель" class="choice-hotels">
             <div>
               <span>От <b>6 490 р</b>/ночь</span>
-              <img src="" alt="Рейтинг 5 из 5">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
+              <span class="stars">
+                <img src="" alt="Рейтинг 5 из 5">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+              </span>
             </div>
             <h3 class="title-choice-hotels" >
               Lagoona el retorno
@@ -253,11 +267,13 @@
             <img src="" alt="Отель" class="choice-hotels">
             <div>
               <span>От <b>6 505 р</b>/ночь</span>
-              <img src="" alt="Рейтинг 5 из 5">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
+              <span class="stars">
+                <img src="" alt="Рейтинг 5 из 5">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+              </span>
             </div>
             <h3 class="title-choice-hotels" >
               Lagoona enfermo terminó
@@ -271,11 +287,13 @@
             <img src="" alt="Отель" class="choice-hotels">
             <div>
               <span>От <b>6 824 р</b>/ночь</span>
-              <img src="" alt="Рейтинг 5 из 5">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
+              <span class="stars">
+                <img src="" alt="Рейтинг 5 из 5">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+              </span>
             </div>
             <h3 class="title-choice-hotels" >
               Lagoona suerte siguió siempre
