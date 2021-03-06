@@ -1,5 +1,8 @@
 * {
   box-sizing: border-box;
+  font-size: 16px;
+  line-height: 2;
+  background-color:#F1F1F1;
 }
 ul {
   margin: 0;
@@ -10,7 +13,11 @@ a {
   text-decoration: none;
   color: black;
 }
-
+h2 {
+  font-size: 40px;
+  padding-left: 42px;
+  margin: 0;
+}
   /*
   html {
   font-family*/
@@ -26,10 +33,12 @@ a {
 header {
   height: 154px;
   margin-top: 30px;
+  margin-bottom: 70px;
 }
 .logo {
   display: inline-flex;
   margin-bottom: 30px;
+  align-items: center;
 }
 .logo-img {
   margin-right: auto;
@@ -47,7 +56,6 @@ header {
   font-size: 16px;
   text-decoration: none;
   color: #CC9933;
-  padding-top: 20px;
   background-image: url(../img/Vector.svg);
   background-position: center left;
   background-size: auto;
@@ -59,12 +67,6 @@ header {
 .header-nav {
   display: flex;
   align-items: center;
-}
-
-.header-list-menu {
-  display: flex;
-  justify-content: space-between;
-  font-size: 16px;
 }
 .header-item:not(:last-child) {
   margin-right: 47px;
@@ -78,10 +80,12 @@ header {
   height: 50px;
   padding-left: 22px;
 }
-/*main-action*/
 .parent {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
+/*main-action*/
 .reserve {
   display: flex;
   flex-direction: column;
@@ -95,6 +99,9 @@ header {
 .btn-search {
   margin-right: 30px;
 }
+.offer {
+  width: 595px;
+}
 /*.link-color {
   font-size: 16px;
   color: #CC9933;
@@ -102,9 +109,59 @@ header {
 .article-linc-icon {
 
 }
+.title-article {
+  width: 320px;
+  height: 165px;
+  line-height: .75;
+  color: #FFFFFF;
+  font-size: 66px;
+  align: left;
+}
+
+
 /* main-description*/
-.section-title {
+.section-title-description {
   margin-top: 70px;
   margin-bottom: 30px;
-  font-size: 40px;
+}
+.description-text {
+  padding-left: 43px;
+  width: 880px;
+  height: 176px;
+  margin: 0;
+}
+/*service*/
+.item-service {
+  width: 573px;
+  height: 326px;
+}
+.item-service-text {
+  width: 385px;
+  height: 48px;
+}
+.right {
+  margin-left: 24px;
+}
+.exlusiv {
+  margin-bottom: 24px;
+}
+.banquet {
+  margin-bottom: 24px;
+}
+/*benefits*/
+.item-benefits {
+  width: 276px;
+  height: 276px;
+}
+.top-row {
+  margin-bottom: 23px;
+}
+.item-benefits-text {
+  width: 185px;
+  height: 112px;
+}
+/*choice-hotels*/
+.child-choicehotels {
+  width: 374px;
+  height: 442px;
 }
