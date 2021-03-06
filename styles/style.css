@@ -6,6 +6,10 @@ ul {
   padding: 0;
   list-style: none;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 
   /*
   html {
@@ -18,8 +22,10 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
 }
+/*header*/
 header {
-  height: 154;
+  height: 154px;
+  margin-top: 30px;
 }
 .logo {
   display: inline-flex;
@@ -68,4 +74,37 @@ header {
 }
 .search {
   font-size: 14px;
+  width: 355px;
+  height: 50px;
+  padding-left: 22px;
+}
+/*main-action*/
+.parent {
+  display: flex;
+}
+.reserve {
+  display: flex;
+  flex-direction: column;
+  margin-right: 55px;
+  width: 520px;
+}
+.search-action {
+  display: flex;
+  align-items: center;
+}
+.btn-search {
+  margin-right: 30px;
+}
+/*.link-color {
+  font-size: 16px;
+  color: #CC9933;
+}*/
+.article-linc-icon {
+
+}
+/* main-description*/
+.section-title {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  font-size: 40px;
 }
