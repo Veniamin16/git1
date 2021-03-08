@@ -13,6 +13,14 @@ a {
   text-decoration: none;
   color: black;
 }
+.btn {
+  display: inline-block;
+  padding: .5em 1em;
+  font-size: 16px;
+  line-height: 1;
+  border-radius: 4px;
+  cursor: pointer;
+}
 h2 {
   font-size: 40px;
   padding-left: 42px;
@@ -31,7 +39,7 @@ h2 {
 }
 /*header*/
 header {
-  height: 154px;
+  min-height: 154px;
   margin-top: 30px;
   margin-bottom: 70px;
 }
@@ -49,7 +57,6 @@ header {
   padding-bottom: 20px;
   text-align: center;
   font-size: 22px;
-  box-align: left; 
 }
 .accaunt {
   margin-left: 550px;
@@ -83,14 +90,21 @@ header {
 .parent {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 }
 /*main-action*/
+/*.section-action {
+  height: 670px;
+}*/
+.section-action {
+  padding-bottom: 70px;
+}
 .reserve {
   display: flex;
   flex-direction: column;
   margin-right: 55px;
   width: 520px;
+  outline: 3px solid tomato;
 }
 .search-action {
   display: flex;
@@ -101,47 +115,56 @@ header {
 }
 .offer {
   width: 595px;
+  outline: 3px solid tomato;
 }
 /*.link-color {
   font-size: 16px;
   color: #CC9933;
-}*/
+}
 .article-linc-icon {
 
-}
+}*/
 .title-article {
   width: 320px;
-  height: 165px;
-  line-height: .75;
+  line-height: 1;
   color: #FFFFFF;
   font-size: 66px;
-  align: left;
 }
 
 
 /* main-description*/
-.section-title-description {
-  margin-top: 70px;
-  margin-bottom: 30px;
+.section-description {
+  padding-bottom: 65px;
 }
+/*.section-title-description {
+  height: 30px;
+  margin-bottom: 27px;
+}*/
 .description-text {
   padding-left: 43px;
   width: 880px;
-  height: 176px;
   margin: 0;
 }
 /*service*/
+.servise-title {
+  padding-left: 45px;
+}
 .item-service {
   width: 573px;
-  height: 326px;
+  min-height: 326px;
+  flex: 1 1 auto;
+}
+.item-service:not(:nth-child(2n)) {
+  margin-right: 22px;
 }
 .item-service-text {
   width: 385px;
-  height: 48px;
+  padding-left: 45px;
+  padding-bottom: 40px;
 }
-.right {
+/*.right {
   margin-left: 24px;
-}
+}*/
 .exlusiv {
   margin-bottom: 24px;
 }
@@ -151,17 +174,47 @@ header {
 /*benefits*/
 .item-benefits {
   width: 276px;
-  height: 276px;
+  min-height: 276px;
+}
+.item-benefits:not(:nth-child(4n)) {
+  margin-right: 22px;
 }
 .top-row {
   margin-bottom: 23px;
 }
 .item-benefits-text {
-  width: 185px;
-  height: 112px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 40px;
 }
+.item-benefits-icon {
+  display: block;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-color: transparent;
+  background-position: top left;
+}
+/*
+.benefits-icon-bathtub {
+  background-image: url('/img/bathtub.svg');
+}*/
+
 /*choice-hotels*/
 .child-choicehotels {
   width: 374px;
   height: 442px;
+}
+.child-choicehotels:not(:nth-child(3n)) {
+  margin-right: 24px;
+}
+.choicehotels-content {
+  padding-left: 45px;
+}
+.hotels-choice {
+  margin-left: 45px;
+  margin-bottom: 55px;
+}
+.title-choice-hotels {
+  padding-left: 45px;
 }
