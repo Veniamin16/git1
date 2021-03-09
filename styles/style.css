@@ -1,4 +1,29 @@
+@font-face {
+  font-family: "MullerBold";
+  font-style: normal;
+  src: url('/fonts/MullerBold.woff2') format("woff2"),
+       url('/fonts/MullerBold.woff') format("woff");
+}
+@font-face {
+  font-family: "MullerLight";
+  font-style: normal;
+  src: url('/fonts/MullerLight.woff') format("woff2"),
+       url('/fonts/MullerLight.woff2') format("woff");
+}
+@font-face {
+  font-family: "MullerMedium";
+  font-style: normal;
+  src: url('/fonts/MullerMedium.woff') format("woff2"),
+       url('/fonts/MullerMedium.woff2') format("woff");
+}
+@font-face {
+  font-family: "MullerRegular";
+  font-style: normal;
+  src: url('/fonts/MullerRegular.woff') format("woff2"),
+       url('/fonts/MullerRegular.woff2') format("woff");
+}
 * {
+  font-family: "MullerRegular";
   box-sizing: border-box;
   font-size: 16px;
   line-height: 2;
@@ -22,13 +47,12 @@ a {
   cursor: pointer;
 }
 h2 {
+  font-family: "MullerBold";
   font-size: 40px;
   padding-left: 42px;
   margin: 0;
 }
-  /*
-  html {
-  font-family*/
+
 
 .container {
   max-width: 1200px;
@@ -172,10 +196,7 @@ header {
   margin-bottom: 24px;
 }
 /*benefits*/
-.item-benefits {
-  width: 276px;
-  min-height: 276px;
-}
+
 .item-benefits:not(:nth-child(4n)) {
   margin-right: 22px;
 }
@@ -183,22 +204,24 @@ header {
   margin-bottom: 23px;
 }
 .item-benefits-text {
-  padding-left: 45px;
+
   padding-right: 45px;
   padding-bottom: 40px;
+  margin-top: 60px;
 }
 .item-benefits-icon {
-  display: block;
-  height: 60px;
+  width: 276px;
+  min-height: 276px;
+  margin-left: 45px;
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: 60px auto;
   background-color: transparent;
   background-position: top left;
 }
-/*
+
 .benefits-icon-bathtub {
   background-image: url('/img/bathtub.svg');
-}*/
+}
 
 /*choice-hotels*/
 .child-choicehotels {
