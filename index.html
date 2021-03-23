@@ -44,8 +44,7 @@
         </ul>
         <form class="form-search" action="">
           <input class="search" type="search" placeholder="Поиск">
-          <button class="btn btn-search">
-          </button>
+          <button class="btn btn-form-search"></button>
         </form>
       </nav>
     </div>
@@ -55,24 +54,24 @@
       <div class="container parent">
         <div class="child reserve">
           <h2 class="section-title">Быстрая бронь</h2>
-          <input type="text" placeholder="Город">
-          <input type="text" placeholder="Категория номера">
-          <input type="text" onfocus="(this.type='date')" placeholder="Дата заселения">
-          <input type="number" placeholder="Количество ночей">
-          <input type="number" placeholder="Количество гостей">
+          <input class="reserve-input" type="text" placeholder="Город">
+          <input class="reserve-input" type="text" placeholder="Категория номера">
+          <input class="reserve-input" type="text" onfocus="(this.type='date')" placeholder="Дата заселения">
+          <input class="reserve-input" type="number" placeholder="Количество ночей">
+          <input class="reserve-input" type="number" placeholder="Количество гостей">
           <div class="search-action">
             <button class="btn btn-search">
               Найти номер
             </button>
-            <a href="">9 756 <span>предложений доступно</span></a>
+            <a href="" class="action-link">9 756 <span class="action-text-link">предложений доступно</span></a>
           </div>
         </div>
         <div class="child offer">
           <h2 class="section-title">Спецпредложение</h2>
           <article class="article">
             <h3 class="title-article">Номера категории люкс</h3>
-            <span>От 5000 р 
-            <a href="">Подробнее<span class="article-linc-icon"></span></a>
+            <span class="article-text">От 5000 р 
+            <a href="" class="article-link">Подробнее</a>
             </span>
           </article>
         </div>
@@ -91,19 +90,23 @@
        <h2 class="section-title">Услуги</h2>
        <ul class="list-service parent">
         <li class="item-service exlusiv">
-          <h3 class="servise-title"><a href="">Эксклюзивное обслуживание</a></h3>
+          <img src="img/pic2.jpeg" alt="" class="img-service">
+          <h3 class="servise-title"><a href="" class="servise-title-link">Эксклюзивное обслуживание</a></h3>
           <p class="item-service-text">Равным образом постоянный количественный рост и сфера нашей активности</p>
         </li>
-        <li class="item-service right banquet">
-          <h3 class="servise-title"><a href="">Аренда банкетных залов</a></h3>
+        <li class="item-service banquet">
+          <img src="img/pic3.jpeg" alt="" class="img-service">
+          <h3 class="servise-title"><a href="" class="servise-title-link">Аренда банкетных залов</a></h3>
           <p class="item-service-text">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.</p>
         </li>
         <li class="item-service fitness">
-          <h3 class="servise-title"><a href="">Сауны, бассейны, бани, фитнесс-залы</a></h3>
+          <img src="img/pic4.jpeg" alt="" class="img-service">
+          <h3 class="servise-title"><a href="" class="servise-title-link">Сауны, бассейны, бани, фитнесс-залы</a></h3>
           <p class="item-service-text">Не следует, однако, забывать, что начало повседневной работы по формированию позиции</p>
         </li>
-        <li class="item-service right parking">
-          <h3 class="servise-title"><a href="">Охраняемые автомобильные стоянки</a></h3>
+        <li class="item-service parking">
+          <img src="img/pic5.jpeg" alt="" class="img-service">
+          <h3 class="servise-title"><a href="" class="servise-title-link">Охраняемые автомобильные стоянки</a></h3>
           <p class="item-service-text">Не следует, однако, забывать, что начало повседневной работы по формированию позиции</p>
         </li>
       </ul> 
@@ -115,29 +118,29 @@
           Преимущества
         </h2>
         <ul class="list-benefits parent">
-          <li class="item-benefits-icon benefits-icon-bathtub top-row">
-           <p class="item-benefits-text">Идейные соображения высшего порядка,а также постоянный количественный рост</p>
+          <li class="item-benefits top-row">
+           <p class="item-benefits-text benefits-icon-bathtub">Идейные соображения высшего порядка,а также постоянный количественный рост</p>
           </li>
-          <li class="item-benefits-icon top-row">
-            <p class="item-benefits-text">Значимость этих проблем настолько очевидна, что вопрос остается открытым</p>
+          <li class="item-benefits top-row">
+            <p class="item-benefits-text benefits-icon-hanger">Значимость этих проблем настолько очевидна, что вопрос остается открытым</p>
           </li>
-          <li class="item-benefits-icon top-row">
-            <p class="item-benefits-text">Таким образом реализация плановых заданий играет важную роль для понимания</p>
+          <li class="item-benefits top-row">
+            <p class="item-benefits-text benefits-icon-heating">Таким образом реализация плановых заданий играет важную роль для понимания</p>
           </li>
-          <li class="item-benefits-icon top-row">
-            <p class="item-benefits-text">Повседневная практика показывает, что сложившаяся структура организации</p>
+          <li class="item-benefits top-row">
+            <p class="item-benefits-text benefits-icon-hotel-key">Повседневная практика показывает, что сложившаяся структура организации</p>
           </li>
-          <li class="item-benefits-icon">
-            <p class="item-benefits-text">Равным образом рамки и место обучения кадров способствует подготовке сотрудника</p>
+          <li class="item-benefits">
+            <p class="item-benefits-text benefits-icon-parking">Равным образом рамки и место обучения кадров способствует подготовке сотрудника</p>
           </li>
-          <li class="item-benefits-icon">
-            <p class="item-benefits-text">Консультации с активом влечет за собой процесс внедрения услуг нашего сервиса</p>
+          <li class="item-benefits">
+            <p class="item-benefits-text benefits-icon-reception">Консультации с активом влечет за собой процесс внедрения услуг нашего сервиса</p>
           </li>
-          <li class="item-benefits-icon">
-            <p class="item-benefits-text">Повседневная практика показывает, что дальнейшее развитие различных форм</p>
+          <li class="item-benefits">
+            <p class="item-benefits-text benefits-icon-security-box">Повседневная практика показывает, что дальнейшее развитие различных форм</p>
           </li>
-          <li class="item-benefits-icon">
-            <p class="item-benefits-text">Значимость этого настолько очевидна, что консультация наших экспертов помогает</p>
+          <li class="item-benefits">
+            <p class="item-benefits-text benefits-icon-swimming-pool">Значимость этого настолько очевидна, что консультация наших экспертов помогает</p>
           </li>
         </ul>
       </div>
@@ -149,15 +152,15 @@
         </h2>
         <ul class="list-choice-hotels parent">
           <li class="child-choicehotels">
-            <img src="" alt="Отель" class="choice-hotels">
+            <img src="img/23@1X.jpeg" alt="Отель" class="choice-hotels">
             <div class="choicehotels-content">
               <span>От <b>4 698 р</b>/ночь</span>
-              <span class="stars">
-                <img src="" alt="Рейтинг 4 из 5">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+              <span class="rating-stars">
+                <img src="img/star.svg" alt="Рейтинг 4 из 5" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="" alt="" class="stars">
               </span>
             </div>
             <h3 class="title-choice-hotels" >
@@ -169,15 +172,15 @@
             <button class="btn hotels-choice">Номера</button>
           </li>
           <li class="child-choicehotels">
-            <img src="" alt="Отель" class="choice-hotels">
+            <img src="img/24@1X.jpeg" alt="Отель" class="choice-hotels">
             <div class="choicehotels-content">
               <span>От <b>5 148 р</b>/ночь</span>
-              <span class="stars">
-                <img src="" alt="Рейтинг 4 из 5">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+              <span class="rating-stars">
+                <img src="img/star.svg" alt="Рейтинг 4 из 5" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="" alt="" class="stars">
               </span>
             </div>
             <h3 class="title-choice-hotels" >
@@ -189,15 +192,15 @@
             <button class="btn hotels-choice">Номера</button>
           </li>
           <li class="child-choicehotels">
-            <img src="" alt="Отель" class="choice-hotels">
+            <img src="img/26@1X.jpeg" alt="Отель" class="choice-hotels">
             <div class="choicehotels-content">
               <span>От <b>6 254 р</b>/ночь</span>
-              <span class="stars">
-                <img src="" alt="Рейтинг 5 из 5">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+              <span class="rating-stars">
+                <img src="img/star.svg" alt="Рейтинг 5 из 5" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
               </span>
             </div>
             <h3 class="title-choice-hotels" >
@@ -209,15 +212,15 @@
             <button class="btn hotels-choice">Номера</button>
           </li>
           <li class="child-choicehotels">
-            <img src="" alt="Отель" class="choice-hotels">
+            <img src="img/29@1X.jpeg" alt="Отель" class="choice-hotels">
             <div class="choicehotels-content">
               <span>От <b>6 320 р</b>/ночь</span>
-              <span class="stars">
-                <img src="" alt="Рейтинг 5 из 5">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+              <span class="rating-stars">
+                <img src="img/star.svg" alt="Рейтинг 5 из 5" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
               </span>
             </div>
             <h3 class="title-choice-hotels" >
@@ -229,15 +232,15 @@
             <button class="btn hotels-choice">Номера</button>
           </li>
           <li class="child-choicehotels">
-            <img src="" alt="Отель" class="choice-hotels">
+            <img src="img/30@1X.jpeg" alt="Отель" class="choice-hotels">
             <div class="choicehotels-content">
               <span>От <b>6 457 р</b>/ночь</span>
-              <span class="stars">
-                <img src="" alt="Рейтинг 5 из 5">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+              <span class="rating-stars">
+                <img src="img/star.svg" alt="Рейтинг 5 из 5" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
               </span>
             </div>
             <h3 class="title-choice-hotels" >
@@ -249,15 +252,15 @@
             <button class="btn hotels-choice">Номера</button>
           </li>
           <li class="child-choicehotels">
-            <img src="" alt="Отель" class="choice-hotels">
+            <img src="img/31@1X.jpeg" alt="Отель" class="choice-hotels">
             <div class="choicehotels-content">
               <span>От <b>6 490 р</b>/ночь</span>
-              <span class="stars">
-                <img src="" alt="Рейтинг 5 из 5">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+              <span class="rating-stars">
+                <img src="img/star.svg" alt="Рейтинг 5 из 5" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
               </span>
             </div>
             <h3 class="title-choice-hotels" >
@@ -268,15 +271,15 @@
             </div>
             <button class="btn hotels-choice">Номера</button>
           </li><li class="child-choicehotels">
-            <img src="" alt="Отель" class="choice-hotels">
+            <img src="img/39@1X.jpeg" alt="Отель" class="choice-hotels">
             <div class="choicehotels-content">
               <span>От <b>6 505 р</b>/ночь</span>
-              <span class="stars">
-                <img src="" alt="Рейтинг 5 из 5">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+              <span class="rating-stars">
+                <img src="img/star.svg" alt="Рейтинг 5 из 5" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
               </span>
             </div>
             <h3 class="title-choice-hotels" >
@@ -288,15 +291,15 @@
             <button class="btn hotels-choice">Номера</button>
           </li>
           <li class="child-choicehotels">
-            <img src="" alt="Отель" class="choice-hotels">
+            <img src="img/40@1X (1).jpeg" alt="Отель" class="choice-hotels">
             <div class="choicehotels-content">
               <span>От <b>6 824 р</b>/ночь</span>
-              <span class="stars">
-                <img src="" alt="Рейтинг 5 из 5">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+              <span class="rating-stars">
+                <img src="img/star.svg" alt="Рейтинг 5 из 5" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
+                <img src="img/star.svg" alt="" class="stars">
               </span>
             </div>
             <h3 class="title-choice-hotels" >
@@ -307,12 +310,38 @@
             </div>
             <button class="btn hotels-choice">Номера</button>
           </li>
-          <li class="child-choicehotels">
-            <a href="">Посмотреть все варианты</a>
+          <li class="child-choicehotels last-card">
+            <a href="" class="last-card-text">Посмотреть все варианты</a>
           </li>
         </ul>
       </div>
     </section>
+    <!---<section class="section-contacts">
+      <div class="container">
+        <h2 class="section-title">Контакты</h2>
+        <div class="feedback">
+          <div class="info">
+            <ul>
+              <li></li>
+            </ul>
+            <button class="btn button-route">Построить маршрут</button>
+          </div>
+          <div class="feedback-section">
+            <form class="feedback-form" action="">
+              <input class="search" type="search" placeholder="Имя">
+              <input class="search" type="search" placeholder="+7">
+              <input class="search" type="search" placeholder="Сообщение">
+              <button class="btn btn-feedback-form"></button>
+            </form>
+          </div>
+        </div>
+      </div> 
+    </section>
   </main>
+  <footer>
+    <div class="container">
+      
+    </div>
+  </footer>-->
 </body>
 </html>

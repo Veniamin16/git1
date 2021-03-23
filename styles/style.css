@@ -1,33 +1,34 @@
 @font-face {
   font-family: "MullerBold";
   font-style: normal;
-  src: url('/fonts/MullerBold.woff2') format("woff2"),
-       url('/fonts/MullerBold.woff') format("woff");
+  src: url('../fonts/MullerBold.woff2') format("woff2"),
+       url('../fonts/MullerBold.woff') format("woff");
 }
 @font-face {
   font-family: "MullerLight";
   font-style: normal;
-  src: url('/fonts/MullerLight.woff') format("woff2"),
-       url('/fonts/MullerLight.woff2') format("woff");
+  src: url('../fonts/MullerLight.woff') format("woff"),
+       url('../fonts/MullerLight.woff2') format("woff2");
 }
 @font-face {
   font-family: "MullerMedium";
   font-style: normal;
-  src: url('/fonts/MullerMedium.woff') format("woff2"),
-       url('/fonts/MullerMedium.woff2') format("woff");
+  src: url('../fonts/MullerMedium.woff') format("woff"),
+       url('../fonts/MullerMedium.woff2') format("woff2");
 }
 @font-face {
   font-family: "MullerRegular";
   font-style: normal;
-  src: url('/fonts/MullerRegular.woff') format("woff2"),
-       url('/fonts/MullerRegular.woff2') format("woff");
+  src: url('../fonts/MullerRegular.woff') format("woff"),
+       url('../fonts/MullerRegular.woff2') format("woff2");
 }
+
 * {
-  font-family: "MullerRegular";
   box-sizing: border-box;
   font-size: 16px;
   line-height: 2;
-  background-color:#F1F1F1;
+  border-radius: 10px;
+  border: none;
 }
 ul {
   margin: 0;
@@ -36,23 +37,34 @@ ul {
 }
 a {
   text-decoration: none;
-  color: black;
+  color: #333333;
 }
-.btn {
-  display: inline-block;
-  padding: .5em 1em;
-  font-size: 16px;
-  line-height: 1;
-  border-radius: 4px;
-  cursor: pointer;
+
+html {
+  font-family: "MullerRegular";
+  color: #333333;
+  background-color:#F1F1F1;
 }
+
 h2 {
-  font-family: "MullerBold";
+  font-family: "MullerRegular";
   font-size: 40px;
+  line-height: 1;
+  color: #333333;
   padding-left: 42px;
+  padding-bottom: 23px;
   margin: 0;
 }
 
+.btn {
+  display: inline-block;
+  padding: .5em 1em;
+  font-family: "MullerBold";
+  font-size: 16px;
+  line-height: 1;
+  border-radius: 10px;
+  cursor: pointer;
+}
 
 .container {
   max-width: 1200px;
@@ -60,15 +72,16 @@ h2 {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 70px;
 }
 /*header*/
 header {
   min-height: 154px;
   margin-top: 30px;
-  margin-bottom: 70px;
 }
 .logo {
   display: inline-flex;
+  height: 55px;
   margin-bottom: 30px;
   align-items: center;
 }
@@ -80,7 +93,9 @@ header {
   padding-top: 17px;
   padding-bottom: 20px;
   text-align: center;
+  font-family: "MullerBold";
   font-size: 22px;
+  color: #666666;
 }
 .accaunt {
   margin-left: 550px;
@@ -93,21 +108,25 @@ header {
   background-repeat: no-repeat;
   padding-left: 25px;
 }
-/*.input-accaunt-icon*/
+
 
 .header-nav {
   display: flex;
   align-items: center;
+  background-color: #FFFFFF;
+  height: 70px;
+  padding-left: 23px;
 }
 .header-item:not(:last-child) {
-  margin-right: 47px;
+  margin-right: 45px;
 } 
 .form-search {
-  margin-left: 125px;
+  margin-left: 110px;
 }
+/*проверить размеры отступов после верстки формы*/
 .search {
   font-size: 14px;
-  width: 355px;
+  width: 325px;
   height: 50px;
   padding-left: 22px;
 }
@@ -120,46 +139,84 @@ header {
 /*.section-action {
   height: 670px;
 }*/
-.section-action {
-  padding-bottom: 70px;
-}
+
 .reserve {
   display: flex;
   flex-direction: column;
   margin-right: 55px;
   width: 520px;
-  outline: 3px solid tomato;
+}
+.reserve-input {
+  min-height: 70px;
+  margin-bottom: 23px;
+  background-color: #FFFFFF;
+  padding-left: 22px;
 }
 .search-action {
   display: flex;
   align-items: center;
 }
 .btn-search {
+  line-height: 1;
+  padding: 27px 30px;
   margin-right: 30px;
+  background-color: #CC9933;
+  color:#FFFFFF;
+}
+.action-link {
+  color: #CC9933;
+}
+.action-text-link {
+  color: #999999;
 }
 .offer {
   width: 595px;
-  outline: 3px solid tomato;
 }
+
 /*.link-color {
   font-size: 16px;
   color: #CC9933;
-}
-.article-linc-icon {
-
 }*/
+.article {
+  min-height: 540px;
+  padding-left: 40px;
+  padding-bottom: 35px;
+  background-image: url("../img/pic1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+}
 .title-article {
   width: 320px;
+  margin: 0;
+  padding-top: 265px;
   line-height: 1;
   color: #FFFFFF;
+  font-family: "MullerBold";
   font-size: 66px;
+  opacity: 1;
+}
+.article-link {
+  background-image: url("../img/nav.png");
+  background-position: center right;
+  background-size: auto;
+  background-repeat: no-repeat;
+  padding-right: 10px;
+}
+.article-text {
+  font-size: 35px;
+  color: #fff;
+}
+.article-link {
+  font-size: 16px;
+  padding-left: 43px;
+  color: #FFCC66;
 }
 
 
 /* main-description*/
-.section-description {
-  padding-bottom: 65px;
-}
+
 /*.section-title-description {
   height: 30px;
   margin-bottom: 27px;
@@ -173,17 +230,29 @@ header {
 .servise-title {
   padding-left: 45px;
 }
+.servise-title-link {
+  color: #CC9933;
+  background-image: url("../img/nav.png");
+  background-position: center right;
+  background-size: auto;
+  background-repeat: no-repeat;
+  padding-right: 10px;
+}
 .item-service {
   width: 573px;
   min-height: 326px;
   flex: 1 1 auto;
+  background-color: #FFFFFF;
 }
 .item-service:not(:nth-child(2n)) {
   margin-right: 22px;
 }
+.img-service {
+  border-radius: 10px 10px 0 0;
+}
 .item-service-text {
   width: 385px;
-  padding-left: 45px;
+  margin-left: 45px;
   padding-bottom: 40px;
 }
 /*.right {
@@ -196,6 +265,12 @@ header {
   margin-bottom: 24px;
 }
 /*benefits*/
+.item-benefits {
+  padding-left: 45px;
+  width: 276px;
+  min-height: 276px;
+  background-color: #FFFFFF;
+}
 
 .item-benefits:not(:nth-child(4n)) {
   margin-right: 22px;
@@ -204,15 +279,11 @@ header {
   margin-bottom: 23px;
 }
 .item-benefits-text {
-
-  padding-right: 45px;
+  max-width: 186px;
+  font-family: "MullerRegular";
+  padding-top: 85px;
   padding-bottom: 40px;
-  margin-top: 60px;
-}
-.item-benefits-icon {
-  width: 276px;
-  min-height: 276px;
-  margin-left: 45px;
+  margin-top: 45px;
   background-repeat: no-repeat;
   background-size: 60px auto;
   background-color: transparent;
@@ -220,13 +291,36 @@ header {
 }
 
 .benefits-icon-bathtub {
-  background-image: url('/img/bathtub.svg');
+  background-image: url("../img/bathtub.svg");
+}
+.benefits-icon-hanger {
+  background-image: url("../img/hanger.svg");
+}
+.benefits-icon-heating {
+  background-image: url("../img/heating.svg");
+}
+.benefits-icon-hotel-key {
+  background-image: url("../img/hotel-key.svg");
+}
+.benefits-icon-parking {
+  background-image: url("../img/parking.svg");
+}
+.benefits-icon-reception {
+  background-image: url("../img/reception.svg");
+}
+.benefits-icon-security-box {
+  background-image: url("../img/security-box.svg");
+}
+.benefits-icon-swimming-pool {
+  background-image: url("../img/swimming-pool.svg");
 }
 
 /*choice-hotels*/
 .child-choicehotels {
   width: 374px;
   height: 442px;
+  background-color: #FFFFFF;
+  margin-bottom: 25px;
 }
 .child-choicehotels:not(:nth-child(3n)) {
   margin-right: 24px;
@@ -240,4 +334,41 @@ header {
 }
 .title-choice-hotels {
   padding-left: 45px;
+  margin: 0;
+}
+.choice-hotels {
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 30px;
+}
+.btn.hotels-choice {
+  background-color: #FFFFFF;
+  color: #CC9933;
+  padding: 15px 20px;
+  margin-top: 15px;
+  border: 2px solid #CC9933;
+}
+.last-card {
+  padding-top: 370px;
+  padding-left: 40px;
+  background-image: url("../img/41@1X.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+}
+.last-card-text{
+  font-size: 22px;
+  color: #FFFFFF;
+  background-image: url("../img/nav.png");
+  background-position: center right;
+  background-size: auto;
+  background-repeat: no-repeat;
+  padding-right: 10px;
+}
+.rating-stars {
+  margin-left: 30px;
+}
+.stars {
+  height: 13px;
+  color: #CC9933;
 }
