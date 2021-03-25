@@ -370,5 +370,47 @@ header {
 }
 .stars {
   height: 13px;
+}
+/*section-contact*/
+.section-contacts {
+  min-height: 680px;
+}
+.feedback {
+  display: flex;
+  flex-direction: row;
+  min-height: 620px;
+  background-color: #FFFFFF;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.contact-info-titles {
+  font-family: "MullerBolld";
+  font-size: 22px;
+}
+.button-route {
+  background-color: #FFFFFF;
   color: #CC9933;
+  padding: 26px 30px;
+  margin-top: 15px;
+  border: 2px solid #CC9933;
+}
+.feedback-form-input {
+  background-color: #F1F1F1;
+}
+
+/*footer*/
+.footer-info {
+  display: flex;
+  align-items: center;
+  min-height: 340px;
+  background-color: #333333;
+  padding-top: 50px;
+  margin-bottom: 60px;
+}
+
+.footer-copyright {
+  display: flex;
+
 }
