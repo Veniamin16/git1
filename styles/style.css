@@ -326,7 +326,29 @@ header {
   margin-right: 24px;
 }
 .choicehotels-content {
+  color: #999;
+}
+.choicehotels-content-city {
   padding-left: 45px;
+  color: #999;
+}
+.rating-stars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 45px;
+  padding-left: 45px;
+  }
+  .stars {
+    height: 13px;
+  }
+  
+.choicehotels-content-price {
+  color: #333;
+}
+.price {
+  font-size: 20px;
 }
 .hotels-choice {
   margin-left: 45px;
@@ -365,12 +387,7 @@ header {
   background-repeat: no-repeat;
   padding-right: 10px;
 }
-.rating-stars {
-  margin-left: 30px;
-}
-.stars {
-  height: 13px;
-}
+
 /*section-contact*/
 .section-contacts {
   min-height: 680px;
