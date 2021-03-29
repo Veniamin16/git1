@@ -42,9 +42,9 @@
             <a href="">Контакты</a>
           </li>
         </ul>
-        <form class="form-search" action="">
-          <input class="search" type="search" placeholder="Поиск">
-          <button class="btn btn-form-search"></button>
+        <form action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST" class="form-search">
+          <input type="text" name="search" placeholder="Поиск" class="search">
+          <button type="submit" class="btn btn-form-search"></button>
         </form>
       </nav>
     </div>
@@ -54,15 +54,17 @@
       <div class="container parent">
         <div class="child reserve">
           <h2 class="section-title">Быстрая бронь</h2>
-          <input class="reserve-input" type="text" placeholder="Город">
-          <input class="reserve-input" type="text" placeholder="Категория номера">
-          <input class="reserve-input" type="text" onfocus="(this.type='date')" placeholder="Дата заселения">
-          <input class="reserve-input" type="number" placeholder="Количество ночей">
-          <input class="reserve-input" type="number" placeholder="Количество гостей">
-          <div class="search-action">
-            <button class="btn btn-search">
+          <form action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST" class="reserve-form">
+            <input required type="text" placeholder="Город" class="reserve-input">
+            <input required type="text" placeholder="Категория номера" class="reserve-input">
+            <input required type="text" onfocus="(this.type='date')" placeholder="Дата заселения" class="reserve-input">
+            <input required type="number" placeholder="Количество ночей" class="reserve-input">
+            <input required type="number" placeholder="Количество гостей" class="reserve-input">
+            <div class="search-action">
+            <button type="submit" class="btn btn-search">
               Найти номер
             </button>
+          </form>
             <a href="" class="action-link">9 756 <span class="action-text-link">предложений доступно</span></a>
           </div>
         </div>
@@ -346,11 +348,11 @@
             <button class="btn button-route">Построить маршрут</button>
           </div>
           <div class="feedback-section">
-            <form class="feedback-form" action="">
-              <input class="feedback-form-input" type="search" placeholder="Имя">
-              <input class="feedback-form-input" type="search" placeholder="+7">
-              <input class="feedback-form-input" type="search" placeholder="Сообщение">
-              <button class="btn btn-feedback-form"></button>
+            <form action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST" class="feedback-form">
+              <input required type="text" name="name" placeholder="Имя" class="feedback-form-input">
+              <input required type="tel" name="phone" placeholder="+7" class="feedback-form-input">
+              <input required type="text" name="text" placeholder="Сообщение" class="feedback-form-input">
+              <button required type="submit" class="btn btn-feedback-form"></button>
             </form>
           </div>
         </div>
@@ -361,7 +363,7 @@
     <div class="container">
       <div class="footer-info">
         <div class="footer-copyright">
-          <p></p>
+          <p>© 2012-2020 Управляющая компания Объединенной сети "Лагуна Хотелс"</p>
         </div>
         <div class="footer-contact-info">
           <p></p>
@@ -387,27 +389,27 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a href="" class="footer-social-link">
-              <span class="footer-social-icon social-icon-"></span>
+              <span class="footer-social-icon social-icon-tripadvisor"></span>
             </a>
           </li>
           <li class="footer-social-item">
             <a href="" class="footer-social-link">
-              <span class="footer-social-icon social-icon-"></span>
+              <span class="footer-social-icon social-icon-twitter"></span>
             </a>
           </li>
           <li class="footer-social-item">
             <a href="" class="footer-social-link">
-              <span class="footer-social-icon social-icon-"></span>
+              <span class="footer-social-icon social-icon-facebook"></span>
             </a>
           </li>
           <li class="footer-social-item">
             <a href="" class="footer-social-link">
-              <span class="footer-social-icon social-icon-"></span>
+              <span class="footer-social-icon social-icon-vk"></span>
             </a>
           </li>
           <li class="footer-social-item">
             <a href="" class="footer-social-link">
-              <span class="footer-social-icon social-icon-"></span>
+              <span class="footer-social-icon social-icon-google"></span>
             </a>
           </li>
         </ul>
